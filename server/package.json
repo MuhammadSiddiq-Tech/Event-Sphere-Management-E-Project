@@ -1,0 +1,30 @@
+{
+  "name": "@eventsphere/server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --experimental-vm-modules ../node_modules/jest/bin/jest.js",
+    "lint": "eslint src tests --ext .js --max-warnings 0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "busboy": "^1.6.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.0",
+    "node-cron": "^3.0.3",
+    "nodemailer": "^6.9.14",
+    "pino": "^9.3.0",
+    "pino-http": "^10.3.0",
+    "pino-pretty": "^11.2.0",
+    "socket.io": "^4.7.5",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0",
+    "mongodb-memory-server": "^10.0.0"
+  }
+}
